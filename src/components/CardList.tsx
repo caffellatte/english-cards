@@ -1,6 +1,6 @@
 import React from 'react';
-import { Word } from '../Word';
-import { Motivation } from '../Motivation'
+import { Word } from '../interfaces/Word';
+import { Motivation } from '../interfaces/Motivation';
 import Card from './Card';
 
 interface ChildProps {
@@ -10,11 +10,7 @@ interface ChildProps {
 
 const CardList: React.FC<ChildProps> = ({words, motivation}) => {
   return(
-    <div
-    // className="container ht-100 d-flex justify-content-center align-items-center"
-    className="container ht-100  align-items-center"
-    // style={{ height: '100vh'}}
-  >
+    <div className="container ht-100  align-items-center">
 
     <div className="container-fluid">
     <h2>Cards</h2>

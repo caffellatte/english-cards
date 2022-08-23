@@ -1,19 +1,22 @@
 import Header from "../components/Header";
+import Body from "../components/Body";
 import Footer from "../components/Footer";
 
-const Dashboard = () => {
+const Profile = () => {
   return(
     <section>
       <Header />
-      <div
-        className="container ht-100 d-flex justify-content-center align-items-center"
-        style={{ height: '100vh'}}
-      >
-        <h2>Profile</h2>
-      </div>
+      <Body>
+        <div
+          className="container ht-100 d-flex justify-content-center align-items-center"
+          style={{ height: '100vh'}}
+        >
+          <h2>Profile</h2>
+        </div>
+      </Body>
       <Footer />
     </section>
   );
 };
 
-export default Dashboard;
+export default Profile;
